@@ -39,6 +39,7 @@ ga('create', 'UA-106827218-1', 'auto');
 ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -1381,7 +1382,7 @@ ga('send', 'pageview');
 			<span class="popup-kick">
 				<img src="img/kick-ic.png" alt="">
 			</span>
-			<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6RRfXlH"  class="frame-map" frameborder="0"></iframe>
+			<iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c3017a103ce95f953d46910788e4439bee3427e6c6ac414136fba8c5cb631de&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 		</div>
 	</div>
 
@@ -1459,6 +1460,11 @@ ga('send', 'pageview');
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-131303-a6Ox4';</script>
 
 
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expandTimeout: "30000",disableButtonTooltip: "1"});
+</script>
 
 
 
@@ -1466,8 +1472,7 @@ ga('send', 'pageview');
 
 
 
-
-
+<!-- Удалить перез заливом на хостинг -->
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
