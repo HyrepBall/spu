@@ -936,10 +936,14 @@ input
 	background: #f7f7f7
 	padding: 80px 0
 
+	.fb-row-top
+		+justify-content(space-around)
+
 .now-how-title
 	position: relative
 	margin: 0 0 40px
 	text-align: left
+	padding-left: 40px
 	
 	span 
 		display: inline-block
@@ -947,6 +951,9 @@ input
 		
 .now-how-title-count
 	font-family: "Roboto Slab", serif
+	position: absolute
+	left: 0
+	top: 0
 	font-size: 18px
 	text-align: center
 	width: 26px
@@ -954,7 +961,6 @@ input
 	line-height: 22px
 	border-radius: 100%
 	border: 1px solid #111
-	margin-right: 25px
 	font-weight: 900
 
 .now-how-title-text
@@ -986,6 +992,7 @@ input
 
 .now-how-img
 	display: block
+	width: 100%
 	margin: 0 auto 50px
 
 .online-metodist-item
@@ -1133,6 +1140,7 @@ input
 	padding-bottom: 70px
 	
 .about-graphic-img
+	width: 100%
 	margin: 40px 0
 	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2)
 
@@ -1149,6 +1157,7 @@ input
 
 		p 
 			width: calc(50% - 40px)
+			padding-left: 20px
 
 .now-how-4
 	padding: 80px 0 40px
@@ -2253,6 +2262,13 @@ input.-error
 	.if-item
 		width: 49%
 
+	.step-item img
+		max-width: 120px
+		margin-bottom: 25px
+
+	.steps-row-dots
+		display: none
+
 
 @media only screen and (max-width : 800px)  
 	.header .fb-row
@@ -2413,7 +2429,36 @@ input.-error
 			margin: 0 auto 25px
 			min-height: auto
 
+	.resume-table-wrap
+		overflow-x: scroll
+		width: 100%
 
+	.resume-table
+		width: 730px
+
+	.about-graphic__toggle:after
+		left: 50%
+		bottom: -50px
+		top: auto
+		right: auto
+		-webkit-transform: translateX(-50%)
+		-moz-transform: translateX(-50%)
+		-ms-transform: translateX(-50%)
+		-o-transform: translateX(-50%)
+		transform: translateX(-50%)
+		
+	.now-how-3 .fb-row p
+		width: 100%
+		max-width: 360px
+		padding-top: 20px
+
+	.now-how-3 .fb-row img
+		width: 100%
+		max-width: 360px
+
+	.step-item
+		width: 50%
+		margin-bottom: 30px
 
 
 @media only screen and (max-width : 700px)  
@@ -2466,6 +2511,12 @@ input.-error
 	.popup-wrap
 		width: 100%
 		transform: translateX(0) 
+
+	.step-item
+		width: 100%
+
+	.now-how-title-text
+		font-size: 14px
 
 
 @media only screen and (max-width : 420px)  
